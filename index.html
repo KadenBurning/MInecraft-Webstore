@@ -5,58 +5,65 @@ HTML code:
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minecraft Shop</title>
+  <title>Minecraft Webstore</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>PvpClubs Store</h1>
+    <h1>Minecraft Webstore</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Bundles</a></li>
+        <li><a href="#">Shop</a></li>
         <li><a href="#">Ranks</a></li>
-        <li><a href="#">OP Items</a></li>
+        <li><a href="#">Bundle Keys</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section id="bundles">
-      <h2>Bundles</h2>
-      <div class="bundle">
-        <h3>PayPal Bundle</h3>
-        <p>Get exclusive Minecraft items with PayPal.</p>
-        <button>Buy Now</button>
-      </div>
-      <div class="bundle">
-        <h3>CashApp Bundle</h3>
-        <p>Unlock special features with CashApp.</p>
-        <button>Buy Now</button>
-      </div>
-    </section>
-
-    <section id="ranks">
+    <section class="ranks">
       <h2>Ranks</h2>
-      <ul>
-        <li>Rank 1</li>
-        <li>Rank 2</li>
-        <li>Rank 3</li>
-      </ul>
+      <div class="rank-card">
+        <h3>Rank 1</h3>
+        <p>Description of Rank 1</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="rank-card">
+        <h3>Rank 2</h3>
+        <p>Description of Rank 2</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="rank-card">
+        <h3>Rank 3</h3>
+        <p>Description of Rank 3</p>
+        <button>Buy Now</button>
+      </div>
     </section>
 
-    <section id="op-items">
-      <h2>OP Items</h2>
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-      </ul>
+    <section class="bundle-keys">
+      <h2>Bundle Keys</h2>
+      <div class="bundle-card">
+        <h3>Bundle Key 1</h3>
+        <p>Description of Bundle Key 1</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="bundle-card">
+        <h3>Bundle Key 2</h3>
+        <p>Description of Bundle Key 2</p>
+        <button>Buy Now</button>
+      </div>
+      <div class="bundle-card">
+        <h3>Bundle Key 3</h3>
+        <p>Description of Bundle Key 3</p>
+        <button>Buy Now</button>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2022 Minecraft Shop. All rights reserved.</p>
+    <p>&copy; 2022 Minecraft Webstore. All rights reserved.</p>
   </footer>
 </body>
 </html>
@@ -66,19 +73,14 @@ CSS code (styles.css):
 ```css
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
-  color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #55cbe9;
+  background-color: red;
   padding: 20px;
-}
-
-h1 {
-  margin: 0;
+  color: white;
 }
 
 nav ul {
@@ -93,7 +95,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
 }
 
@@ -101,42 +103,25 @@ main {
   padding: 20px;
 }
 
-section {
+.ranks, .bundle-keys {
   margin-bottom: 30px;
 }
 
-h2 {
-  color: #55cbe9;
+.ranks h2, .bundle-keys h2 {
+  color: red;
 }
 
-.bundle {
-  background-color: #333333;
+.rank-card, .bundle-card {
+  background-color: cyan;
   padding: 20px;
-  margin-bottom: 20px;
-}
-
-.bundle h3 {
-  color: #ffffff;
-}
-
-button {
-  background-color: #55cbe9;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-}
-
-ul {
-  list-style-type: disc;
-  margin-left: 20px;
+  margin-bottom: 10px;
+  color: white;
 }
 
 footer {
-  background-color: #333333;
+  background-color: red;
   padding: 10px;
+  color: white;
   text-align: center;
 }
 ```
-
-This code creates a basic structure for the Minecraft Shop website with a header, navigation, main content sections for bundles, ranks, and OP items, and a footer. The color theme is based on Minecraft colors, using shades of blue and black. The website is written in English.
