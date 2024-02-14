@@ -1,2 +1,2 @@
 # MInecraft-Webstore
-Hello this is a cool website
+# Dont Ask For It
